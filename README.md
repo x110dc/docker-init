@@ -10,8 +10,12 @@ be copying from project to project.
 
 ### Installation:
 
-mkdir -p ~/bin
-export PATH=~/bin:$PATH
+```
+> mkdir -p ~/bin
+> wget -O ~/bin/docker-init https://raw.githubusercontent.com/x110dc/docker-init/master/docker-init.sh
+> chmod +x ~/bin/docker-init
+> export PATH=~/bin:$PATH
+```
 
 ### Usage:
 ```
