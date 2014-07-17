@@ -26,6 +26,8 @@ clean:
 	docker stop ${APP} && docker rm ${APP}
 interactive:
 	docker run --rm --interactive --tty --name=${APP} ${NAMESPACE}/${APP} bash
+push:
+	docker push ${NAMESPACE}/${APP}
 
 EOF
 ) > Makefile
