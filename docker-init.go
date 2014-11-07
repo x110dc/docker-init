@@ -10,8 +10,7 @@ func check(e error) {
 
 func main() {
 
-	Makefile := []byte(
-		`APP=appname
+	Makefile := []byte(`APP=appname
 NS=namespace
 
 build:
@@ -36,8 +35,7 @@ push:
 	err := ioutil.WriteFile("Makefile", Makefile, 0644)
 	check(err)
 
-	Dockerfile := []byte(
-		`FROM ubuntu:14.04
+	Dockerfile := []byte(`FROM ubuntu:14.04
 MAINTAINER foo@bar.org
 `)
 
